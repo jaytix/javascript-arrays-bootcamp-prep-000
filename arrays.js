@@ -38,6 +38,11 @@ function destructivelyRemoveElementFromBeginningOfArray (array) {
 }
 
 function removeElementFromBeginningOfArray(array) {
-  array.shift();
-  return array;
+  var arr = [];
+
+  for (var i = 1; i < array.length; i++){
+    arr.push(array[i]);
+  }
+  
+  return arr;
 }
